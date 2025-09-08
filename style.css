@@ -28,7 +28,7 @@ body{
 .container1{
     background-color: #27292a;
     margin: 40px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
 }
 
@@ -66,14 +66,14 @@ body{
 
 .section2{
     background: #1f2122;
-    margin-top: 50px;
+    margin-top: 100px;
     border-radius: 20px;
 }
 
 .section2 h1{
     padding: 30px 0 30px 30px;
     color: #fff;
-    font-size: 4vw;
+    font-size: 5vw;
     text-decoration: underline;
     padding-bottom: 20px;
 }
@@ -133,7 +133,7 @@ body{
     left: 50%;
     transform: translateX(-50%);
     background: #e75e8d;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 20px;
     border: none;
     color: #fff;
@@ -141,7 +141,107 @@ body{
     transition: 0.3s;
 }
 
-.section2 button:hover{background: #fff;color: #e75e8d;}
+.section2 button:hover{background: #fff;color: #e75e8d;cursor: pointer;}
+
+.section3{
+    background: #1f2122;
+    margin-top: 100px;
+    border-radius: 20px;
+}
+
+.section3 h1{
+    padding: 30px 0 30px 30px;
+    color: #fff;
+    font-size: 5vw;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+
+.section3 span{display:inline-block; color: #e75e8d; text-decoration: none;}
+
+.item{
+    padding: 30px;
+  }
+  
+.item menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    color: #fff;
+}
+  
+menu li{
+    text-align: center;
+}
+  
+menu img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+menu img:hover{transform: scale(1.1);}
+
+.a{width: 100%;}
+
+menu h4{font-size: 3vw;}
+
+menu h4 span{
+    display: block !important;
+    font-weight: 400;
+    font-size: 2.5vw;
+    color: #666 !important;
+}
+
+.item button{
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 2.5vw;
+    background: #e75e8d;
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.item button:hover{color: #e75e8d; background: #fff;}
+
+#btnn{
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e75e8d;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    font-size: 1.5vw;
+    transition: 0.3s;
+}
+
+#btnn:hover{color: #e75e8d; background: #fff; cursor: pointer;}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    padding-bottom: 30px;
+    font-size: 2vw;
+}
+
+footer span{transition: 0.3s;}
+
+footer span:hover{color: #e75e8d;cursor: pointer;}
 
 @media only screen and (min-width:768px){
     .pc{
@@ -151,9 +251,9 @@ body{
         padding-top: 20px ;
     }
     
-    .container1{padding: 50};
+    .container1{padding: 50px};
 
-    .logo{cursor: pointer;}
+    .pc img{cursor: pointer ;}
     
     .search{position: relative;}
     
@@ -189,8 +289,8 @@ body{
     
     menu li:hover{color: #e75e8d; cursor: pointer;}
     
-    menu button{
-        display: flex;
+    .btn button{
+        display: flex ;
         justify-content: center;
         align-items: center;
         padding: 5px;
@@ -201,12 +301,20 @@ body{
         background: #27292a;
         transition: 0.3s;
     }
+
+    .btn img{
+        width: 36px;
+        height: 36px;
+    }
     
     menu button:hover{background: #e75e8d; color: #fff; cursor: pointer;}
     
-    button img{
-        border-radius: 50%;
+    .nav button img{
+        border-radius: 50% !important;
+        
     }
+
+
 
     .mobile{display: none;}
 
@@ -214,10 +322,13 @@ body{
 
     .section1 h1{font-weight: 900; font-size: 3.5em;}
     
-    .section2 h1{font-size: 3.5vw;}
+    .section2 h1{font-size: 3vw;}
+
+    .section3 h1{font-size: 3vw;}
     
     .card{
         width: 22%;
+        height: 300px;
         background: #27292a;
         border-radius: 20px;
         display: flex;
@@ -225,12 +336,15 @@ body{
         align-items: center;
         flex-direction: column;
         color: #fff;
+        transition: 0.7s;
     }
 
+    .card:hover{transform: rotate(10deg) scale(0.9);}
+
     .card img{
+        height: 200px;
         border-radius: 20px;
         width: 90%;
-        height: auto;
         object-fit: cover;
     }
     
@@ -241,4 +355,39 @@ body{
         font-size: 1vw;
         transition: 0.3s;
     }
+
+    .item menu{
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+
+      
+    menu img{
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+        
+    .a{
+        width: 10%;}
+    
+    menu h4{font-size: 1.3vw;}
+    
+    menu h4 span{
+        display: block !important;
+        font-weight: 400;
+        font-size: 1vw;
+        color: #666 !important;
+    }
+
+    .item button{font-size: 1vw;}
+
+    #btnn{font-size: 1vw;}
+
+    footer{font-size: 1vw;}
 }
