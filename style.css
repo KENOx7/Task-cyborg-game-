@@ -67,11 +67,11 @@ body{
 .section2{
     background: #1f2122;
     margin-top: 50px;
-    padding: 30px 0 30px 30px;
     border-radius: 20px;
 }
 
 .section2 h1{
+    padding: 30px 0 30px 30px;
     color: #fff;
     font-size: 4vw;
     text-decoration: underline;
@@ -129,7 +129,7 @@ body{
 
 .section2 button{
     position: relative;
-    top: 40px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     background: #e75e8d;
@@ -236,15 +236,6 @@ body{
 
     .cardtext2{padding: 0px 20px 20px 20px ; font-size: 1vw;}
     .section2 button{
-        position: relative;
-        top: 50px;
-        left: 50%;
-        transform: translateX(-50%);
-        background: #e75e8d;
-        padding: 10px 20px;
-        border-radius: 20px;
-        border: none;
-        color: #fff;
         font-size: 1vw;
         transition: 0.3s;
     }
