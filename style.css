@@ -89,7 +89,7 @@ body{
 }
 
 .card{
-    width: 45%;
+    width: 40%;
     background: #27292a;
     border-radius: 20px;
     display: flex;
@@ -101,7 +101,7 @@ body{
 }
 
 .card img{
-    border-radius: 20px;
+    border-radius: 10px;
     width: 80%;
     height: auto;
     object-fit: cover;
@@ -129,7 +129,7 @@ body{
 
 .section2 button{
     position: relative;
-    top: 50px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     background: #e75e8d;
@@ -137,7 +137,7 @@ body{
     border-radius: 20px;
     border: none;
     color: #fff;
-    font-size: 12px;
+    font-size: 1.5vw;
     transition: 0.3s;
 }
 
@@ -235,4 +235,17 @@ body{
     .cardtext1{padding: 20px 20px 0 20px ; font-size: 1vw;}
 
     .cardtext2{padding: 0px 20px 20px 20px ; font-size: 1vw;}
+    .section2 button{
+        position: relative;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #e75e8d;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: none;
+        color: #fff;
+        font-size: 1vw;
+        transition: 0.3s;
+    }
 }
