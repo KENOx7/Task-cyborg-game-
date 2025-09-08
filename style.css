@@ -165,6 +165,7 @@ body{
 
 .item{
     padding: 30px;
+    border-bottom: 1px solid #27292a;
   }
   
 .item menu{
