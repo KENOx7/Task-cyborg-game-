@@ -98,7 +98,11 @@ body{
     flex-direction: column;
     color: #fff;
     padding-top: 20px;
+    transition: 0.7s;
 }
+
+.card:hover{transform: rotate(10deg) scale(0.9);}
+
 
 .card img{
     border-radius: 10px;
@@ -134,7 +138,7 @@ body{
     transform: translateX(-50%);
     background: #e75e8d;
     padding: 10px 10px;
-    border-radius: 20px;
+    border-radius: 14px;
     border: none;
     color: #fff;
     font-size: 1.5vw;
@@ -213,7 +217,7 @@ menu h4 span{
 
 #btnn{
     position: relative;
-    top: 20px;
+    top: 14px;
     left: 50%;
     transform: translateX(-50%);
     background: #e75e8d;
@@ -336,10 +340,7 @@ footer span:hover{color: #e75e8d;cursor: pointer;}
         align-items: center;
         flex-direction: column;
         color: #fff;
-        transition: 0.7s;
     }
-
-    .card:hover{transform: rotate(10deg) scale(0.9);}
 
     .card img{
         height: 200px;
@@ -354,6 +355,8 @@ footer span:hover{color: #e75e8d;cursor: pointer;}
     .section2 button{
         font-size: 1vw;
         transition: 0.3s;
+        top: 20px;
+        border-radius: 20px;
     }
 
     .item menu{
@@ -387,7 +390,7 @@ footer span:hover{color: #e75e8d;cursor: pointer;}
 
     .item button{font-size: 1vw;}
 
-    #btnn{font-size: 1vw;}
+    #btnn{font-size: 1vw;top: 20px;}
 
     footer{font-size: 1vw;}
 }
